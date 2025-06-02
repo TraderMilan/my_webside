@@ -822,6 +822,11 @@ a.roll-up {
     header{
         padding-top: 50px;
     }
+    .roll-up{
+        height: 30px;
+        top: 50px;
+    }
+
     nav{
         background-color: rgb(0, 22, 37);
         width: 100%;
@@ -846,7 +851,25 @@ a.roll-up {
     .roll-nav{
         display: flex;
         margin-right: 10px;
+        pointer-events: auto;
     }
+
+    .menu-toggle {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-toggle svg {
+        width: 100%;
+        height: 100%;
+        pointer-events: auto;
+    }
+
+
     .roll-nav-menu{
         display: none;
         flex-direction: column;
@@ -1018,6 +1041,8 @@ a.roll-up {
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
+        margin-left: -40px;
         padding: 0;
     }
 
@@ -1041,6 +1066,9 @@ a.roll-up {
     .dots {
         margin-bottom: 0px;
         height: 80px;
+    }
+    .view-full-project{
+        margin-bottom: 50px;
     }
 
     .used-technologies {
@@ -1105,12 +1133,16 @@ a.roll-up {
         gap: 20px;
     }
     a.view{
-        margin: 0px;
+        margin: 0;
     }
     a.view:hover{
-        margin: 0px;
+        margin: 0;
     }
 }
+
+/*
+CV znovu stiahnut so skillmi, + upravit link na sptranku
+ */
 
 
 

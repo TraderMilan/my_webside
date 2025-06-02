@@ -60,7 +60,7 @@ $(document).ready(function () {
 
 
     /*---smooth scroll---*/
-    let goTo = $('.menu').find('a').add('.links .red-button');
+    let goTo = $('.menu a, .links .red-button, .roll-nav-menu a');
     goTo.on('click', function (e) {
         e.preventDefault();
 
