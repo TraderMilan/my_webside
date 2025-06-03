@@ -75,7 +75,7 @@ $(document).ready(function () {
     let toTop = $('<a>', {
         href: '#home',
         class: 'roll-up',
-        html: '⏶',
+        html: '⮝',
     });
     toTop.hide().appendTo('body').on('click', function (e) {
         e.preventDefault();
@@ -88,6 +88,16 @@ $(document).ready(function () {
         else toTop.fadeOut(500);
 
     });
+
+    /*---media-menu---*/
+    $('.menu-toggle').on('click', function () {
+        $('.roll-nav-menu').slideToggle();
+    });
+    $('.roll-nav-menu a').on('click', function (e) {
+        $(this).closest('.roll-nav-menu').slideUp();
+    })
+
+
 
     /*---mail---*/
     document.getElementById("contact").addEventListener("submit", function (e) {

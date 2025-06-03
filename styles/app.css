@@ -824,7 +824,7 @@ a.roll-up {
     }
     .roll-up{
         height: 30px;
-        top: 50px;
+        top: 53px;
     }
 
     nav{
@@ -873,17 +873,14 @@ a.roll-up {
     .roll-nav-menu{
         display: none;
         flex-direction: column;
-
         position: absolute;
-        top: 30px;
+        top: 32px;
         left: 0;
-
         width: 100%;
         gap: 10px;
         font-size: 14px;
         padding: 0;
-
-        background: linear-gradient( rgb(0, 22, 37), rgb(0, 15, 25)) ;
+        background: linear-gradient(rgb(0, 22, 37), rgb(0, 18, 28));
         z-index: 10;
     }
 
@@ -898,11 +895,7 @@ a.roll-up {
     }
     .roll-nav-menu li:last-child {
         border-bottom: none;
-    }
-
-    .roll-nav:hover .roll-nav-menu{
-        cursor: pointer;
-        display: flex;
+        padding-bottom: 7px;
     }
 
 
