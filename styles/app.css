@@ -15,11 +15,11 @@ body {
 
 }
 
-.responsive-submit{
+.responsive-submit {
     display: none;
 }
 
-.roll-nav{
+.roll-nav {
     display: none;
 }
 
@@ -149,26 +149,26 @@ nav, .technologies li, main, form, footer, .projects-heading {
 
 /*----------------------------------------------------------------------------------------*/
 
-@keyframes slide {
-    0% {
-        transform: translateX(-2000px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
+/*@keyframes slide {*/
+/*    0% {*/
+/*        transform: translateX(-2000px);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateX(0px);*/
+/*    }*/
+/*}*/
 
-@keyframes appear {
-    0% {
-        opacity: 0;
-    }
-    60% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+/*@keyframes appear {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    60% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
 
 /*animacie*/
 
@@ -238,6 +238,7 @@ a.resume:hover {
 .technologies ul li {
     padding: 10px;
     font-size: clamp(12px, 1.9vw, 18px);
+    transition: transform 0.4s;
 
 }
 
@@ -557,10 +558,11 @@ footer p {
     border-radius: 50%;
     overflow: visible;
     color: rgb(0, 22, 37);
+    transition: background-color 0.2s ;
 }
 
 .social-media svg:hover {
-    background-color: #d0d0d0;
+    background-color: #b4b4b4;
 }
 
 
@@ -744,7 +746,7 @@ footer p {
 }
 
 .js {
-    width: 60%;
+    width: 70%;
 }
 
 /*---Skills---*/
@@ -819,15 +821,16 @@ a.roll-up {
 
 @media (max-width: 600px) {
 
-    header{
+    header {
         padding-top: 50px;
     }
-    .roll-up{
+
+    .roll-up {
         height: 30px;
         top: 53px;
     }
 
-    nav{
+    nav {
         background-color: rgb(0, 22, 37);
         width: 100%;
         left: 0;
@@ -840,15 +843,15 @@ a.roll-up {
     }
 
 
-    nav h3{
+    nav h3 {
         margin-left: 15px;
     }
 
-    nav .menu{
+    nav .menu {
         display: none;
     }
 
-    .roll-nav{
+    .roll-nav {
         display: flex;
         margin-right: 10px;
         pointer-events: auto;
@@ -870,7 +873,7 @@ a.roll-up {
     }
 
 
-    .roll-nav-menu{
+    .roll-nav-menu {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -884,7 +887,7 @@ a.roll-up {
         z-index: 10;
     }
 
-    .roll-nav-menu li{
+    .roll-nav-menu li {
         width: 100%;
         border-bottom: 1px solid rgb(0, 0, 0);
         display: flex;
@@ -893,6 +896,7 @@ a.roll-up {
         align-items: center;
         padding-bottom: 5px;
     }
+
     .roll-nav-menu li:last-child {
         border-bottom: none;
         padding-bottom: 7px;
@@ -1060,7 +1064,8 @@ a.roll-up {
         margin-bottom: 0px;
         height: 80px;
     }
-    .view-full-project{
+
+    .view-full-project {
         margin-bottom: 50px;
     }
 
@@ -1077,58 +1082,71 @@ a.roll-up {
     .container {
         padding: 0;
     }
+
     /*---skills---*/
     .skills {
-        display:  flex;
-        flex-direction: column;
-    }
-    .skills > div {
-        padding-left: 0;
-    }
-    .skill-level{
-        padding-left: 20px;
-    }
-    .bar-wrapper{
-        left: clamp(100px, 15vw, 130px);
-        width: calc(90% - 100px);
-    }
-    /*---skills---*/
-    /*---contact---*/
-    form{
         display: flex;
         flex-direction: column;
     }
-    form > div{
-        display:flex;
+
+    .skills > div {
+        padding-left: 0;
+    }
+
+    .skill-level {
+        padding-left: 20px;
+    }
+
+    .bar-wrapper {
+        left: clamp(100px, 15vw, 130px);
+        width: calc(90% - 100px);
+    }
+
+    /*---skills---*/
+    /*---contact---*/
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form > div {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .responsive-submit{
+
+    .responsive-submit {
         display: flex;
     }
-    .normal-submit{
+
+    .normal-submit {
         display: none;
     }
-    .form-row{
+
+    .form-row {
         width: 80%;
     }
-    .form-row input{
+
+    .form-row input {
         width: calc(90% - 60px);
     }
 
     /*---contact---*/
 }
+
 @media (max-width: 300px) {
-    .links-media{
+    .links-media {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    a.view{
+
+    a.view {
         margin: 0;
     }
-    a.view:hover{
+
+    a.view:hover {
         margin: 0;
     }
 }

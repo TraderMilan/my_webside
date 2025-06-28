@@ -62,14 +62,20 @@ $(document).ready(function () {
     /*---smooth scroll---*/
     let goTo = $('.menu a, .links .red-button, .roll-nav-menu a');
     goTo.on('click', function (e) {
-        e.preventDefault();
+        const href = $(this).attr('href');
 
-        $('html, body').animate({
-            scrollTop: $(this.hash).offset().top
-        }, 1200);
+        // Ak je href hash (napr. #contact), použijeme smooth scroll
+        if (href.startsWith("#")) {
+            e.preventDefault();
 
-        window.location.hash = this.hash;
-    })
+            $('html, body').animate({
+                scrollTop: $(href).offset().top
+            }, 1200);
+
+            window.location.hash = href;
+        }
+        // Inak (napr. GitHub link) to necháme normálne prejsť
+    });
 
     /*---go up button---*/
     let toTop = $('<a>', {
