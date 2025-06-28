@@ -149,26 +149,26 @@ nav, .technologies li, main, form, footer, .projects-heading {
 
 /*----------------------------------------------------------------------------------------*/
 
-/*@keyframes slide {*/
-/*    0% {*/
-/*        transform: translateX(-2000px);*/
-/*    }*/
-/*    100% {*/
-/*        transform: translateX(0px);*/
-/*    }*/
-/*}*/
+@keyframes slide {
+    0% {
+        transform: translateX(-2000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
 
-/*@keyframes appear {*/
-/*    0% {*/
-/*        opacity: 0;*/
-/*    }*/
-/*    60% {*/
-/*        opacity: 0;*/
-/*    }*/
-/*    100% {*/
-/*        opacity: 1;*/
-/*    }*/
-/*}*/
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /*animacie*/
 
@@ -1151,9 +1151,6 @@ a.roll-up {
     }
 }
 
-/*
-CV znovu stiahnut so skillmi, + upravit link na sptranku
- */
 
 
 
